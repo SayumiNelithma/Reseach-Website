@@ -1,0 +1,1038 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Eldease | AI Powered Caregiving Research Website</title>
+  <meta name="description"
+    content="Eldease is an AI-powered caregiving research platform designed to support elderly wellbeing through emotion detection, health risk prediction, voice assistance, and caregiver support." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top custom-navbar">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="#home">
+        <img src="images/logo.png" alt="Eldease Logo" class="logo-img me-2" />
+        <span class="brand-text">Eldease</span>
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+        aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="mainNavbar">
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+          <li class="nav-item">
+            <a class="nav-link active" href="#home">Home</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Project Scope
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#literature">Literature Survey</a></li>
+              <li><a class="dropdown-item" href="#research-gap">Research Gap</a></li>
+              <li><a class="dropdown-item" href="#problem-solution">Research Problem & Solution</a></li>
+              <li><a class="dropdown-item" href="#objectives">Research Objectives</a></li>
+              <li><a class="dropdown-item" href="#methodology">Methodology</a></li>
+              <li><a class="dropdown-item" href="#technologies">Technologies</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#milestones">Milestones</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Downloads
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#downloads">Documents</a></li>
+              <li><a class="dropdown-item" href="#downloads">Presentations</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#team">About Us</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact Us</a>
+          </li>
+          <li class="nav-item ms-lg-5 d-flex align-items-center">
+            <button id="themeToggle" class="btn btn-outline-secondary btn-sm rounded-circle" aria-label="Toggle Theme"
+              style="width: 36px; height: 36px;">
+              <i id="themeIcon" class="fas fa-moon"></i>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header id="home" class="hero-section">
+    <div class="overlay"></div>
+    <div class="container position-relative">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-7">
+          <h1 class="hero-title">AI-Powered Caregiving System for Elderly Wellbeing</h1>
+          <p class="hero-text my-4">
+            Eldease is a smart caregiving research platform designed to support older adults through
+            emotion-aware monitoring, predictive health insights, voice-based interaction, and timely caregiver support.
+          </p>
+          <div class="hero-actions d-flex flex-wrap gap-3 mt-4">
+            <a href="#literature" class="btn btn-primary-custom">Explore Research</a>
+            <a href="#downloads" class="btn btn-outline-custom">Project Documents</a>
+          </div>
+        </div>
+
+        <div class="col-lg-5">
+          <div class="hero-image-wrap">
+            <img src="images/hero.jpg" alt="Eldease Hero" class="img-fluid hero-image" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Literature Survey -->
+  <section id="literature" class="section-block">
+    <div class="container">
+      <div class="section-heading text-center">
+        <h2 class="section-title">Literature Survey</h2>
+        <p class="section-subtitle">
+          Understanding the current state of elderly care, smart monitoring, and intelligent support systems.
+        </p>
+      </div>
+
+      <div class="content-card">
+        <p>
+          The global elderly population is increasing rapidly, creating a growing need for safe, scalable,
+          and accessible caregiving solutions. Traditional care methods often rely heavily on family members
+          or caregivers, which can lead to stress, delayed intervention, and limited real-time awareness of
+          the elder’s physical or emotional condition.
+        </p>
+        <p>
+          Recent work in artificial intelligence, computer vision, machine learning, and natural language
+          processing has opened new possibilities for elderly care. Smart systems can support routine
+          monitoring, identify unusual behavioral patterns, provide voice-based communication, and help
+          reduce social isolation through interactive assistance.
+        </p>
+        <p>
+          However, many existing solutions focus only on one area, such as fall detection, health monitoring,
+          or reminder systems. There is still strong value in building an integrated platform that combines
+          emotional support, health-risk awareness, voice interaction, and caregiver communication into one
+          unified elder care environment.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Research Gap -->
+  <section id="research-gap" class="section-block section-alt">
+    <div class="container">
+      <div class="section-heading text-center">
+        <h2 class="section-title">Research Gap</h2>
+        <p class="section-subtitle">
+          Critical limitations in current caregiving systems that motivate the Eldease platform.
+        </p>
+      </div>
+
+      <div class="row g-4">
+
+        <!-- Emotional Monitoring -->
+        <div class="col-md-6 col-lg-3">
+          <div class="feature-box h-100">
+            <div class="icon-circle">
+              <i class="fas fa-brain"></i>
+            </div>
+            <h5>Emotional Monitoring Gap</h5>
+            <p>
+              Most systems do not track emotional wellbeing or detect loneliness, sadness, anxiety, and stress in
+              elderly users.
+            </p>
+          </div>
+        </div>
+
+        <!-- Predictive Care -->
+        <div class="col-md-6 col-lg-3">
+          <div class="feature-box h-100">
+            <div class="icon-circle">
+              <i class="fas fa-chart-line"></i>
+            </div>
+            <h5>Predictive Care Gap</h5>
+            <p>
+              Existing tools rarely analyze daily behavior patterns to identify early warning signs of health risks.
+            </p>
+          </div>
+        </div>
+
+        <!-- Voice Interaction -->
+        <div class="col-md-6 col-lg-3">
+          <div class="feature-box h-100">
+            <div class="icon-circle">
+              <i class="fas fa-microphone"></i>
+            </div>
+            <h5>Voice Interaction Gap</h5>
+            <p>
+              Many elderly users need simpler interaction methods, but current platforms often lack natural voice
+              support.
+            </p>
+          </div>
+        </div>
+
+        <!-- Caregiver Communication -->
+        <div class="col-md-6 col-lg-3">
+          <div class="feature-box h-100">
+            <div class="icon-circle">
+              <i class="fas fa-user-nurse"></i>
+            </div>
+            <h5>Caregiver Communication Gap</h5>
+            <p>
+              There is limited integration between elderly-side support systems and real-time caregiver notifications.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Research Problem & Solution -->
+  <section id="problem-solution" class="section-block">
+    <div class="container">
+      <div class="section-heading text-center">
+        <h2 class="section-title">Research Problem & Solution</h2>
+        <p class="section-subtitle">
+          The caregiving challenge we address and the intelligent platform we propose.
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-lg-6">
+          <div class="content-card h-100">
+            <h4 class="card-title-main">Research Problem</h4>
+            <p>
+              Elderly individuals who live independently or with minimal supervision often face loneliness,
+              unnoticed emotional distress, delayed emergency responses, and insufficient day-to-day support.
+              At the same time, caregivers may struggle to monitor wellbeing continuously due to time,
+              distance, or workload constraints.
+            </p>
+            <p>
+              This creates a need for a unified system that can intelligently monitor wellbeing, detect
+              emotional or health-related changes, provide voice-based support, and keep caregivers informed
+              at the right time.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="content-card h-100">
+            <h4 class="card-title-main">Our Solution: Eldease</h4>
+            <p>
+              Eldease is an AI-powered caregiving platform that combines emotion detection, health risk
+              prediction, voice assistance, daily routine coaching, meal planning, therapy support,
+              and emergency alerting in a single intelligent system.
+            </p>
+            <p>
+              The platform is designed to improve elderly wellbeing while also reducing caregiver burden by
+              providing proactive insights, timely alerts, and meaningful support through accessible technology.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Research Objectives -->
+  <section id="objectives" class="section-block section-alt">
+    <div class="container">
+      <div class="section-heading text-center mb-5">
+        <h2 class="section-title">Research Objectives</h2>
+        <p class="section-subtitle">
+          The main goals that guide the design and development of the Eldease system.
+        </p>
+      </div>
+
+      <div class="row g-4">
+
+        <!-- Objective 1 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="objective-card h-100">
+            <div class="objective-header">
+              <div class="icon-circle"><i class="fas fa-robot"></i></div>
+              <span class="objective-number">01</span>
+            </div>
+            <h5>AI-powered caregiving platform</h5>
+            <p>Create an integrated system supporting elderly physical and emotional wellbeing.</p>
+          </div>
+        </div>
+
+        <!-- Objective 2 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="objective-card h-100">
+            <div class="objective-header">
+              <div class="icon-circle"><i class="fas fa-brain"></i></div>
+              <span class="objective-number">02</span>
+            </div>
+            <h5>Real-time emotion detection</h5>
+            <p>Identify stress, sadness, happiness, and other emotional states using AI.</p>
+          </div>
+        </div>
+
+        <!-- Objective 3 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="objective-card h-100">
+            <div class="objective-header">
+              <div class="icon-circle"><i class="fas fa-chart-line"></i></div>
+              <span class="objective-number">03</span>
+            </div>
+            <h5>Health risk prediction</h5>
+            <p>Analyze behavioral patterns to detect early warning signs of health risks.</p>
+          </div>
+        </div>
+
+        <!-- Objective 4 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="objective-card h-100">
+            <div class="objective-header">
+              <div class="icon-circle"><i class="fas fa-microphone"></i></div>
+              <span class="objective-number">04</span>
+            </div>
+            <h5>Natural voice interaction</h5>
+            <p>Enable simple and accessible voice communication for elderly users.</p>
+          </div>
+        </div>
+
+        <!-- Objective 5 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="objective-card h-100">
+            <div class="objective-header">
+              <div class="icon-circle"><i class="fas fa-bell"></i></div>
+              <span class="objective-number">05</span>
+            </div>
+            <h5>Smart caregiver alerts</h5>
+            <p>Provide real-time notifications and updates during critical situations.</p>
+          </div>
+        </div>
+
+        <!-- Objective 6 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="objective-card h-100">
+            <div class="objective-header">
+              <div class="icon-circle"><i class="fas fa-house-user"></i></div>
+              <span class="objective-number">06</span>
+            </div>
+            <h5>Independent living support</h5>
+            <p>Empower elderly individuals to live safely with intelligent assistance.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Methodology -->
+  <section id="methodology" class="section-block">
+    <div class="container">
+      <div class="section-heading text-center">
+        <h2 class="section-title">Methodology</h2>
+        <p class="section-subtitle">
+          Our research and development approach for building the Eldease caregiving platform.
+        </p>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="content-card h-100">
+            <div class="method-step">
+              <h5>1. Requirements Analysis</h5>
+              <p>Study elderly care challenges, caregiver needs, and existing system limitations.</p>
+            </div>
+
+            <div class="method-step">
+              <h5>2. System Design</h5>
+              <p>Design the architecture for the mobile/web platform, backend logic, AI modules, and data flow.</p>
+            </div>
+
+            <div class="method-step">
+              <h5>3. AI Model Development</h5>
+              <p>Develop models for emotion detection, risk prediction, and intelligent voice interaction support.</p>
+            </div>
+
+            <div class="method-step">
+              <h5>4. Implementation</h5>
+              <p>Build the application interfaces and integrate the AI-based caregiving modules into one system.</p>
+            </div>
+
+            <div class="method-step">
+              <h5>5. Testing & Validation</h5>
+              <p>Evaluate usability, accessibility, feature effectiveness, and caregiver usefulness through testing.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Technologies -->
+  <section id="technologies" class="section-block section-alt">
+    <div class="container">
+
+      <div class="section-heading text-center mb-5">
+        <h2 class="section-title">Technology Stack</h2>
+        <p class="section-subtitle">
+          A reliable, elder-centric platform powered by modern AI, mobile, and cloud technologies.
+        </p>
+      </div>
+
+      <div class="row g-4">
+
+        <!-- Flutter -->
+        <div class="col-md-6 col-lg-3">
+          <div class="tech-card-new h-100 text-center p-4">
+            <div class="tech-icon bg-light-blue">
+              <img src="images/tech/flutter.png" alt="Flutter" style="width: 35px; height: 35px;" />
+            </div>
+            <h5>Flutter</h5>
+            <p>Fast, accessible mobile UI for easy interaction on phones and tablets.</p>
+          </div>
+        </div>
+
+        <!-- Python -->
+        <div class="col-md-6 col-lg-3">
+          <div class="tech-card-new h-100 text-center p-4">
+            <div class="tech-icon bg-light-green">
+              <img src="images/tech/python.png" alt="Python" style="width: 35px; height: 35px;" />
+            </div>
+            <h5>Python</h5>
+            <p>Flexible backend language for AI workflows and secure data processing.</p>
+          </div>
+        </div>
+
+        <!-- FastAPI -->
+        <div class="col-md-6 col-lg-3">
+          <div class="tech-card-new h-100 text-center p-4">
+            <div class="tech-icon bg-light-orange">
+              <img src="images/tech/fast_api.png" alt="FastAPI" style="width: 35px; height: 35px;" />
+            </div>
+            <h5>FastAPI</h5>
+            <p>High-performance API framework to deliver real-time care updates.</p>
+          </div>
+        </div>
+
+        <!-- Firebase -->
+        <div class="col-md-6 col-lg-3">
+          <div class="tech-card-new h-100 text-center p-4">
+            <div class="tech-icon bg-light-red">
+              <img src="images/tech/firebase.png" alt="Firebase" style="width: 35px; height: 35px;" />
+            </div>
+            <h5>Firebase</h5>
+            <p>Cloud data sync, authentication, and real-time messaging.</p>
+          </div>
+        </div>
+
+        <!-- TensorFlow -->
+        <div class="col-md-6 col-lg-3">
+          <div class="tech-card-new h-100 text-center p-4">
+            <div class="tech-icon bg-light-purple">
+              <img src="images/tech/tensorflow.png" alt="TensorFlow" style="width: 35px; height: 35px;" />
+            </div>
+            <h5>TensorFlow</h5>
+            <p>AI model training and inference for emotion detection.</p>
+          </div>
+        </div>
+
+        <!-- NLP -->
+        <div class="col-md-6 col-lg-3">
+          <div class="tech-card-new h-100 text-center p-4">
+            <div class="tech-icon bg-light-pink">
+              <img src="images/tech/nlp.png" alt="NLP" style="width: 35px; height: 35px;" />
+            </div>
+            <h5>NLP</h5>
+            <p>Natural language processing for voice interaction.</p>
+          </div>
+        </div>
+
+        <!-- Machine Learning -->
+        <div class="col-md-6 col-lg-3">
+          <div class="tech-card-new h-100 text-center p-4">
+            <div class="tech-icon bg-light-cyan">
+              <img src="images/tech/ml.png" alt="Machine Learning" style="width: 35px; height: 35px;" />
+            </div>
+            <h5>Machine Learning</h5>
+            <p>Smart behavior analysis to detect unusual events.</p>
+          </div>
+        </div>
+
+        <!-- Whisper AI -->
+        <div class="col-md-6 col-lg-3">
+          <div class="tech-card-new h-100 text-center p-4">
+            <div class="tech-icon bg-light-gray">
+              <img src="images/tech/whisper.png" alt="Whisper AI" style="width: 35px; height: 35px;" />
+            </div>
+            <h5>Whisper AI</h5>
+            <p>Speech recognition for accurate voice commands.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Milestones -->
+  <section id="milestones" class="section-block">
+    <div class="container">
+      <div class="section-heading text-center mb-5">
+        <h2 class="section-title">Milestones</h2>
+        <p class="section-subtitle">
+          The academic and technical progress path of the Eldease research project.
+        </p>
+      </div>
+
+      <div class="milestone-timeline">
+
+        <div class="milestone-item">
+          <div class="milestone-dot">1</div>
+          <div class="milestone-card">
+            <span class="milestone-date">March 2021</span>
+            <h5>Project Proposal</h5>
+            <p>
+              A Project Proposal is presented to potential sponsors or clients to receive funding or get the project
+              approved.
+            </p>
+          </div>
+        </div>
+
+        <div class="milestone-item">
+          <div class="milestone-dot">2</div>
+          <div class="milestone-card">
+            <span class="milestone-date">June 2021</span>
+            <h5>Progress Presentation I</h5>
+            <p>
+              Progress Presentation I reviews the 50% completion status of the project and reveals any gaps or
+              inconsistencies in the design and requirements.
+            </p>
+          </div>
+        </div>
+
+        <div class="milestone-item">
+          <div class="milestone-dot">3</div>
+          <div class="milestone-card">
+            <span class="milestone-date">July 2021</span>
+            <h5>Research Paper</h5>
+            <p>
+              Describes the contribution to existing knowledge while giving due recognition to all referenced work used
+              in developing new knowledge.
+            </p>
+          </div>
+        </div>
+
+        <div class="milestone-item">
+          <div class="milestone-dot">4</div>
+          <div class="milestone-card">
+            <span class="milestone-date">September 2021</span>
+            <h5>Progress Presentation II</h5>
+            <p>
+              Progress Presentation II reviews the 90% completion status of the project, along with a poster
+              presentation describing the project as a whole.
+            </p>
+          </div>
+        </div>
+
+        <div class="milestone-item">
+          <div class="milestone-dot">5</div>
+          <div class="milestone-card">
+            <span class="milestone-date">October 2021</span>
+            <h5>Website Assessment</h5>
+            <p>
+              The website helps promote the research project and presents the key details and outcomes related to the
+              project.
+            </p>
+          </div>
+        </div>
+
+        <div class="milestone-item">
+          <div class="milestone-dot">6</div>
+          <div class="milestone-card">
+            <span class="milestone-date">November 2021</span>
+            <h5>Logbook</h5>
+            <p>
+              The project status is validated through the logbook. This also includes Status Documents 1 and 2.
+            </p>
+          </div>
+        </div>
+
+        <div class="milestone-item">
+          <div class="milestone-dot">7</div>
+          <div class="milestone-card">
+            <span class="milestone-date">November 2021</span>
+            <h5>Final Report</h5>
+            <p>
+              The Final Report evaluates the completed project carried out throughout the year, including individual,
+              group, and final report assessments.
+            </p>
+          </div>
+        </div>
+
+        <div class="milestone-item">
+          <div class="milestone-dot">8</div>
+          <div class="milestone-card">
+            <span class="milestone-date">November 2021</span>
+            <h5>Final Presentation &amp; Viva</h5>
+            <p>
+              The viva is conducted individually to assess each member’s contribution to the project.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Downloads -->
+  <section id="downloads" class="section-block section-alt">
+    <div class="container">
+
+      <!-- DOCUMENTS -->
+      <h2 class="section-title mb-2">Documents</h2>
+
+
+      <div class="row g-4 mb-5">
+
+        <!-- Card -->
+        <div class="col-md-6 col-lg-3">
+          <div class="doc-card">
+            <h5><i class="fas fa-file-alt text-primary me-2"></i>Topic Assessment</h5>
+            <p>Submitted on 2021/02/25</p>
+            <div class="doc-footer">
+              <span>Group</span>
+              <a href="YOUR_LINK" target="_blank">Download</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project Charter -->
+        <div class="col-md-6 col-lg-3">
+          <div class="doc-card">
+            <h5><i class="fas fa-file-signature text-success me-2"></i>Project Charter</h5>
+            <p>Submitted on 2021/02/25</p>
+            <div class="doc-footer">
+              <span>Group</span>
+              <a href="YOUR_LINK" target="_blank">Download</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project Proposal -->
+        <div class="col-md-6 col-lg-3">
+          <div class="doc-card">
+            <h5><i class="fas fa-file-pdf text-danger me-2"></i>Project Proposal</h5>
+            <p>Submitted on 2021/03/22</p>
+            <div class="doc-footer">
+              <span>Individual</span>
+              <a href="YOUR_LINK" target="_blank">Download</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Checklist I -->
+        <div class="col-md-6 col-lg-3">
+          <div class="doc-card">
+            <h5><i class="fas fa-file-alt text-info me-2"></i>Checklist Document I</h5>
+            <p>Submitted on 2021/07/05</p>
+            <div class="doc-footer">
+              <span>Individual</span>
+              <a href="YOUR_LINK" target="_blank">Download</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Checklist II -->
+        <div class="col-md-6 col-lg-3">
+          <div class="doc-card">
+            <h5><i class="fas fa-file-alt text-info me-2"></i>Checklist Document II</h5>
+            <p>Yet to be submitted, link will be updated soon.</p>
+            <div class="doc-footer">
+              <span>Individual</span>
+              <a href="#">Download</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Research Paper -->
+        <div class="col-md-6 col-lg-3">
+          <div class="doc-card">
+            <h5><i class="fas fa-file-contract text-danger me-2"></i>Research Paper</h5>
+            <p>Yet to be submitted, link will be updated soon.</p>
+            <div class="doc-footer">
+              <span>Group</span>
+              <a href="#">Download</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Final Report -->
+        <div class="col-md-6 col-lg-3">
+          <div class="doc-card">
+            <h5><i class="fas fa-book text-primary me-2"></i>Final Report</h5>
+            <p>Submitted on 2021/10/13</p>
+            <div class="doc-footer multi">
+              <div>
+                <span>Group</span>
+                <a href="#">Download</a>
+              </div>
+              <div>
+                <span>Individual</span>
+                <a href="#">Download</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Poster -->
+        <div class="col-md-6 col-lg-3">
+          <div class="doc-card">
+            <h5><i class="fas fa-image text-secondary me-2"></i>Poster</h5>
+            <p>Submitted on 2021/10/13</p>
+            <div class="doc-footer">
+              <span>Group</span>
+              <a href="#">Download</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- PRESENTATIONS -->
+      <h2 class="section-title mb-2">Presentations</h2>
+
+      <div class="row g-4">
+
+        <!-- Proposal -->
+        <div class="col-md-6 col-lg-3">
+          <div class="doc-card">
+            <h5><i class="fas fa-file-powerpoint text-warning me-2"></i>Proposal Presentation</h5>
+            <p>Submitted on 2021/03/14</p>
+            <div class="doc-footer">
+              <span>Group</span>
+              <a href="#">Download</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Progress 1 -->
+        <div class="col-md-6 col-lg-3">
+          <div class="doc-card">
+            <h5><i class="fas fa-chart-line text-info me-2"></i>Progress Presentation I</h5>
+            <p>Submitted on 2021/07/08</p>
+            <div class="doc-footer">
+              <span>Group</span>
+              <a href="#">Download</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Progress 2 -->
+        <div class="col-md-6 col-lg-3">
+          <div class="doc-card">
+            <h5><i class="fas fa-chart-bar text-info me-2"></i>Progress Presentation II</h5>
+            <p>Submitted on 2021/10/18</p>
+            <div class="doc-footer">
+              <span>Group</span>
+              <a href="#">Download</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Final -->
+        <div class="col-md-6 col-lg-3">
+          <div class="doc-card">
+            <h5><i class="fas fa-file-powerpoint text-primary me-2"></i>Final Presentation</h5>
+            <p>Yet to be submitted, link will be updated soon.</p>
+            <div class="doc-footer">
+              <span>Group</span>
+              <a href="#">Download</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Team -->
+  <section id="team" class="section-block">
+    <div class="container">
+      <div class="section-heading text-center">
+        <h2 class="section-title">About Us</h2>
+        <p class="section-subtitle">
+          Meet the academic supervisors and student researchers behind the Eldease platform.
+        </p>
+      </div>
+
+      <h4 class="sub-heading text-center">Project Supervisors</h4>
+      <div class="row justify-content-center g-4 mb-5">
+        <div class="col-md-5">
+          <div class="team-card h-100">
+            <img src="images/team/supervisor1.jpg" alt="Supervisor" class="team-photo" />
+            <h5>Dr. Samantha Thelijjagoda</h5>
+            <p class="role">Project Supervisor</p>
+            <p class="team-info">Sri Lanka Institute of Information Technology</p>
+
+            <p class="team-info-title">Department</p>
+            <p class="team-info">Information Technology</p>
+
+            <div class="team-links">
+              <a href="https://linkedin.com/in/YOUR_LINK" target="_blank">
+                <i class="fab fa-linkedin-in"></i> LinkedIn
+              </a>
+              <a href="mailto:your@email.com">
+                <i class="fas fa-envelope"></i> E-Mail
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-5">
+          <div class="team-card h-100">
+            <img src="images/team/supervisor2.jpg" alt="Co Supervisor" class="team-photo" />
+            <h5>Samantha Rajapaksha</h5>
+            <p class="role">Co-Supervisor</p>
+            <p class="team-info">Sri Lanka Institute of Information Technology</p>
+
+            <p class="team-info-title">Department</p>
+            <p class="team-info">Information Technology</p>
+
+            <div class="team-links">
+              <a href="https://linkedin.com/in/YOUR_LINK" target="_blank">
+                <i class="fab fa-linkedin-in"></i> LinkedIn
+              </a>
+              <a href="mailto:your@email.com">
+                <i class="fas fa-envelope"></i> E-Mail
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h4 class="sub-heading text-center">Research Team</h4>
+      <div class="row g-4 justify-content-center">
+
+        <!-- Sayumi -->
+        <div class="col-sm-6 col-lg-3">
+          <div class="team-card h-100">
+            <img src="images/team/sayumi.jpg" alt="Sayumi" class="team-photo" />
+
+            <h5>Sayumi</h5>
+            <span class="badge bg-secondary mb-2">Group Leader</span>
+
+            <p class="team-info-title">Undergraduate</p>
+            <p class="team-info">Sri Lanka Institute of Information Technology</p>
+
+            <p class="team-info-title">Department</p>
+            <p class="team-info">Information Technology</p>
+
+            <div class="team-links">
+              <a href="https://linkedin.com/in/YOUR_LINK" target="_blank">
+                <i class="fab fa-linkedin-in"></i> LinkedIn
+              </a>
+              <a href="mailto:your@email.com">
+                <i class="fas fa-envelope"></i> E-Mail
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Nikeshi -->
+        <div class="col-sm-6 col-lg-3">
+          <div class="team-card h-100">
+            <img src="images/team/nikeshi.jpg" alt="Nikeshi" class="team-photo" />
+
+            <h5>Nikeshi</h5>
+            <span class="badge bg-secondary mb-2">Team Member</span>
+
+
+            <p class="team-info-title">Undergraduate</p>
+            <p class="team-info">Sri Lanka Institute of Information Technology</p>
+
+            <p class="team-info-title">Department</p>
+            <p class="team-info">Information Technology</p>
+
+            <div class="team-links">
+              <a href="https://linkedin.com/in/YOUR_LINK" target="_blank">
+                <i class="fab fa-linkedin-in"></i> LinkedIn
+              </a>
+              <a href="mailto:your@email.com">
+                <i class="fas fa-envelope"></i> E-Mail
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mihili -->
+        <div class="col-sm-6 col-lg-3">
+          <div class="team-card h-100">
+            <img src="images/team/mihili.jpg" alt="Mihili" class="team-photo" />
+
+            <h5>Mihili</h5>
+            <span class="badge bg-secondary mb-2">Team Member</span>
+
+            <p class="team-info-title">Undergraduate</p>
+            <p class="team-info">Sri Lanka Institute of Information Technology</p>
+
+            <p class="team-info-title">Department</p>
+            <p class="team-info">Information Technology</p>
+
+            <div class="team-links">
+              <a href="https://linkedin.com/in/YOUR_LINK" target="_blank">
+                <i class="fab fa-linkedin-in"></i> LinkedIn
+              </a>
+              <a href="mailto:your@email.com">
+                <i class="fas fa-envelope"></i> E-Mail
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Chanodya -->
+        <div class="col-sm-6 col-lg-3">
+          <div class="team-card h-100">
+            <img src="images/team/chanodya.jpg" alt="Chanodya" class="team-photo" />
+
+            <h5>Chanodya</h5>
+            <span class="badge bg-secondary mb-2">Team Member</span>
+
+            <p class="team-info-title">Undergraduate</p>
+            <p class="team-info">Sri Lanka Institute of Information Technology</p>
+
+            <p class="team-info-title">Department</p>
+            <p class="team-info">Information Technology</p>
+
+            <div class="team-links">
+              <a href="https://linkedin.com/in/YOUR_LINK" target="_blank">
+                <i class="fab fa-linkedin-in"></i> LinkedIn
+              </a>
+              <a href="mailto:your@email.com">
+                <i class="fas fa-envelope"></i> E-Mail
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section-block section-alt">
+    <div class="container">
+      <div class="section-heading text-center">
+        <h2 class="section-title">Contact Us</h2>
+        <p class="section-subtitle">
+          Interested in our research or want to know more about Eldease? Send us a message.
+        </p>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="contact-card">
+            <form>
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <label for="name" class="form-label">Full Name</label>
+                  <input type="text" class="form-control custom-input" id="name" placeholder="Your name" />
+                </div>
+
+                <div class="col-md-6">
+                  <label for="email" class="form-label">Email Address</label>
+                  <input type="email" class="form-control custom-input" id="email"
+                    placeholder="your.email@example.com" />
+                </div>
+
+                <div class="col-12">
+                  <label for="subject" class="form-label">Subject</label>
+                  <input type="text" class="form-control custom-input" id="subject" placeholder="Subject" />
+                </div>
+
+                <div class="col-12">
+                  <label for="message" class="form-label">Your Message</label>
+                  <textarea class="form-control custom-input" id="message" rows="6"
+                    placeholder="How can we help you?"></textarea>
+                </div>
+
+                <div class="col-12">
+                  <button type="submit" class="btn btn-primary-custom">
+                    <i class="fas fa-paper-plane me-2"></i>Send Message
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer-section">
+    <div class="container">
+      <div class="row g-4 align-items-start">
+        <div class="col-lg-4">
+          <h5>About Eldease</h5>
+          <p>
+            Eldease is an AI-powered caregiving research platform focused on improving elderly wellbeing,
+            intelligent monitoring, and caregiver support.
+          </p>
+        </div>
+
+        <div class="col-lg-4">
+          <h5>Quick Links</h5>
+          <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#literature">Project Scope</a></li>
+            <li><a href="#milestones">Milestones</a></li>
+            <li><a href="#downloads">Downloads</a></li>
+            <li><a href="#team">About Us</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-4">
+          <h5>Contact</h5>
+          <p>Faculty of Computing<br />Sri Lanka Institute of Information Technology<br />Malabe, Sri Lanka</p>
+          <p><a href="mailto:info@eldease.com">info@eldease.com</a></p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Eldease Research Project. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <a href="#home" class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fas fa-arrow-up"></i>
+  </a>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

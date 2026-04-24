@@ -108,6 +108,10 @@ The contact form uses **Formspree**:
 ```
 
 Replace `xvzddebl` with your Formspree endpoint if it changes.
+<form action="https://formspree.io/f/YOUR_ID" method="POST">
+```
+
+Replace `YOUR_ID` with your Formspree endpoint.
 
 ---
 

@@ -36,6 +36,10 @@
   --hero-bg:linear-gradient(135deg, #020617 0%, #0f172a 100%);
 }
 
+[data-theme="dark"] p {
+  color: #ffffff;
+}
+
 [data-theme="dark"] .navbar.bg-white {
   background-color: var(--bg-card) !important;
 }

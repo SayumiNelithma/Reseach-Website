@@ -1,4 +1,4 @@
-# 🧠 Eldease
+# 🧠 Eldease: https://eldease.netlify.app/
 
 ### AI-Powered Caregiving System for Elderly Wellbeing
 
